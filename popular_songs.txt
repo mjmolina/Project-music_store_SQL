@@ -1,0 +1,1 @@
+/*WHICH ARE THE MOST POPULAR SONGS (in playlists)?*//* Query 2-query used for the second insight*/?SELECT Track.TrackId,Track.Name, count(Track.TrackId) as top from TrackJOIN PlaylistTrack on Track.TrackId = PlaylistTrack.TrackIdJOIN Playlist on PlaylistTrack.PlaylistId=Playlist.PlaylistIdgroup by Track.TrackIdorder by top desc ;
