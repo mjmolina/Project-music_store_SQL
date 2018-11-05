@@ -1,1 +1,3 @@
-# project-music_store_SQL
+# Project music store in SQL (Udacity)
+
+This project ...
