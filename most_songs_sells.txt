@@ -1,0 +1,1 @@
+/* WHICH ARE THE SONGS THAT SELLS THE MOST (quantity)?*//* Query 3-query used for the third insight*/SELECT Track.TrackId,Track.Name, sum(InvoiceLine.Quantity) as top from TrackJOIN InvoiceLine on Track.TrackId=InvoiceLine.TrackIdgroup by Track.TrackIdorder by top desc;
